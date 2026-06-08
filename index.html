@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOONPIGEON</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Orbitron',sans-serif;
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.7)),
+url("banner.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+h1{
+font-size:clamp(50px,8vw,120px);
+font-weight:900;
+background:linear-gradient(90deg,#ffffff,#9f4fff,#00d9ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+font-size:clamp(18px,3vw,32px);
+margin-top:20px;
+color:#ddd;
+}
+
+.tagline{
+margin-top:15px;
+font-size:20px;
+color:#ffd700;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:16px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn-primary{
+background:#9f4fff;
+color:white;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+box-shadow:0 0 25px #9f4fff;
+}
+
+.btn-secondary{
+border:2px solid #00d9ff;
+color:#00d9ff;
+}
+
+.btn-secondary:hover{
+background:#00d9ff;
+color:black;
+}
+
+.section{
+padding:100px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
+text-align:center;
+font-size:50px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#10172c;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px rgba(159,79,255,.4);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#9f4fff;
+}
+
+.tokenomics{
+text-align:center;
+font-size:22px;
+line-height:2;
+}
+
+.roadmap{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.phase{
+background:#10172c;
+padding:25px;
+border-radius:15px;
+border-left:5px solid #9f4fff;
+}
+
+footer{
+padding:60px 20px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.1);
+}
+
+footer h3{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.moon{
+position:fixed;
+top:-250px;
+right:-150px;
+width:500px;
+height:500px;
+border-radius:50%;
+background:radial-gradient(circle,#ffffff,#aaa);
+opacity:.08;
+filter:blur(10px);
+z-index:-1;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="moon"></div>
+
+<section class="hero">
+<div class="hero-content">
+
+<h1>MOONPIGEON</h1>
+
+<p class="subtitle">
+The Only Pigeon That Never Lands
+</p>
+
+<p class="tagline">
+🐦 One Pigeon. One Mission. One Moon. 🌕
+</p>
+
+<div class="buttons">
+<a href="#" class="btn btn-primary">BUY NOW</a>
+<a href="#" class="btn btn-secondary">JOIN TELEGRAM</a>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+
+<h2>Why MOONPIGEON?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🚀 Community First</h3>
+<p>Built for the flock. Powered by holders.</p>
+</div>
+
+<div class="card">
+<h3>🌕 Moon Mission</h3>
+<p>Only one destination. Straight to the moon.</p>
+</div>
+
+<div class="card">
+<h3>🔥 Fair Launch</h3>
+<p>No presale. No insider allocations.</p>
+</div>
+
+<div class="card">
+<h3>💎 Diamond Wings</h3>
+<p>Strong hands fly the furthest.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Tokenomics</h2>
+
+<div class="tokenomics">
+
+<p><strong>Ticker:</strong> MP</p>
+<p><strong>Network:</strong> Solana</p>
+<p><strong>Tax:</strong> 0%</p>
+<p><strong>Launch:</strong> Fair Launch</p>
+<p><strong>Community:</strong> 100%</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Roadmap</h2>
+
+<div class="roadmap">
+
+<div class="phase">
+<h3>Phase 1</h3>
+<p>Launch on Pump.fun and build the flock.</p>
+</div>
+
+<div class="phase">
+<h3>Phase 2</h3>
+<p>Dexscreener updates, memes and marketing.</p>
+</div>
+
+<div class="phase">
+<h3>Phase 3</h3>
+<p>Partnerships, listings and moon expansion.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>JOIN THE FLOCK</h3>
+
+<p>Twitter • Telegram • Dexscreener</p>
+
+<br>
+
+<p>
+The moon isn't the destination.<br>
+It's just the first stop.
+</p>
+
+</footer>
+
+</body>
+</html>
